@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.2.2" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
+  associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
+  <class id="1" language="java" name="Logica.Sumapuntos" project="Scrabble" file="/Scrabble/src/Logica/Sumapuntos.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="279" width="202" x="262" y="-35"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="2" language="java" name="Interfaz.Instrucciones" project="Scrabble" 
+    file="/Scrabble/src/Interfaz/Instrucciones.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="123" x="504" y="-35"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" name="Interfaz.Ventana1" project="Scrabble" file="/Scrabble/src/Interfaz/Ventana1.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="117" width="123" x="667" y="-35"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="4" language="java" name="Logica.FichasAleatorias" project="Scrabble" 
+    file="/Scrabble/src/Logica/FichasAleatorias.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="135" width="182" x="830" y="-35"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="5" language="java" name="Interfaz.Ventana2" project="Scrabble" file="/Scrabble/src/Interfaz/Ventana2.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="171" width="131" x="1052" y="-35"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="6" language="java" name="Interfaz.FinJuego" project="Scrabble" file="/Scrabble/src/Interfaz/FinJuego.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="135" width="236" x="1223" y="-35"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="7" language="java" name="Logica.Jugador" project="Scrabble" file="/Scrabble/src/Logica/Jugador.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="153" width="121" x="1695" y="-35"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="8" language="java" name="Logica.Letras" project="Scrabble" file="/Scrabble/src/Logica/Letras.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="117" width="156" x="1499" y="-35"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="9" language="java" name="Logica.RellenarFichas" project="Scrabble" 
+    file="/Scrabble/src/Logica/RellenarFichas.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="153" width="187" x="1856" y="-35"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="10" language="java" name="Logica.Jugador1" project="Scrabble" file="/Scrabble/src/Logica/Jugador1.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="189" width="129" x="1611" y="752"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="11" language="java" name="Logica.Archivo" project="Scrabble" file="/Scrabble/src/Logica/Archivo.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="81" width="201" x="2083" y="-35"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="12" language="java" name="Logica.Jugador2" project="Scrabble" file="/Scrabble/src/Logica/Jugador2.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="189" width="129" x="1780" y="752"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="13" language="java" name="Logica.SuplantarFichas" project="Scrabble" 
+    file="/Scrabble/src/Logica/SuplantarFichas.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="207" width="188" x="2324" y="-35"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="14" language="java" name="Interfaz.VentanaPrincipal" project="Scrabble" 
+    file="/Scrabble/src/Interfaz/VentanaPrincipal.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="747" width="187" x="2552" y="-35"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="15" language="java" name="Interfaz.SeleccionPrimerTurno" project="Scrabble" 
+    file="/Scrabble/src/Interfaz/SeleccionPrimerTurno.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="189" width="198" x="2779" y="-35"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="16" language="java" name="Interfaz.Instruccion" project="Scrabble" 
+    file="/Scrabble/src/Interfaz/Instruccion.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="123" x="3017" y="-35"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="17" language="java" name="Interfaz.MejoresPuntuaciones" project="Scrabble" 
+    file="/Scrabble/src/Interfaz/MejoresPuntuaciones.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="189" width="186" x="3180" y="-35"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <generalization id="18">    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="7"/>  
+  </generalization>  
+  <generalization id="19">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="7"/>  
+  </generalization>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>
