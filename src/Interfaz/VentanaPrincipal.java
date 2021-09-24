@@ -26,7 +26,7 @@ import Logica.SuplantarFichas;
 /**
  * Clase que contiene la ventana del tablero de juego
  * 
- * @author Daniel
+ * @author AndresFWilT
  *
  */
 public class VentanaPrincipal extends JFrame {
@@ -56,6 +56,7 @@ public class VentanaPrincipal extends JFrame {
 	public String Letra1, Letra2, Letra3, Letra4, Letra5, Letra6, Letra7, Letra21, Letra22, Letra23, Letra24, Letra25,
 			Letra26, Letra27; // fichas de cada jugador
 	public String LetraEnviar; // letra que se le asigna al boton
+	private String jugador1,jugador2; //Nombre escogidos por los jugadores
 	public boolean PonerLetra; //
 	public boolean[][] ActivarBotones; // matriz que modifica la activacion de los botones en el tablero
 	public boolean primera; // indica si es el primer turno
@@ -66,16 +67,21 @@ public class VentanaPrincipal extends JFrame {
 	/**
 	 * Ventana donde se muestra el tablero de juego
 	 * 
-	 * @param Jugador1
+	 * @param jugador1
 	 *            - nombre del jugador 1
-	 * @param Jugador2
+	 * @param jugador2
 	 *            - nombre del jugador 2
 	 * @param turno
 	 *            - parametro que asigna quien empieza jugando
 	 */
-	public VentanaPrincipal(String Jugador1, String Jugador2, int turno) {
+	public VentanaPrincipal(String jugador1, String jugador2, int turno) {
+		this.Turno = turno; // se le asigna el turno al atributo que dice de que jugador es el turno
+		this.jugador1 = jugador1;
+		this.jugador2 = jugador2;
+		realizarJuego();
+	}
 
-		Turno = turno; // se le asigna el turno al atributo que dice de que jugador es el turno
+	private void realizarJuego() {
 		LetrasContador = 0; // se inicia el atributo
 		ComboBox = new String[7]; // se crean los arrays de tamaño 7
 		ComboBoxC = new String[7];
@@ -32077,9 +32083,9 @@ public class VentanaPrincipal extends JFrame {
 		panel.add(labelJugadorEnTurno);
 
 		if (Turno == 1)
-			labelJugadorEnTurno.setText(Jugador1);
+			labelJugadorEnTurno.setText(this.getJ1());
 		else
-			labelJugadorEnTurno.setText(Jugador2);
+			labelJugadorEnTurno.setText(this.getJ2());
 
 		lblInformacionDelBoton.setBounds(28, 99, 205, 25);
 		panel.add(lblInformacionDelBoton);
@@ -32090,12 +32096,12 @@ public class VentanaPrincipal extends JFrame {
 
 		panel.add(botonTerminarTurno);
 
-		JLabel lblPuntajeJugador1 = new JLabel("Puntaje " + Jugador1);
+		JLabel lblPuntajeJugador1 = new JLabel("Puntaje " + this.jugador1);
 		lblPuntajeJugador1.setFont(new Font("Tahoma", Font.BOLD, 13));
 		lblPuntajeJugador1.setBounds(28, 207, 223, 23);
 		panel.add(lblPuntajeJugador1);
 
-		JLabel lblPuntajeJugador2 = new JLabel("Puntaje " + Jugador2);
+		JLabel lblPuntajeJugador2 = new JLabel("Puntaje " + this.jugador2);
 		lblPuntajeJugador2.setBounds(28, 320, 216, 24);
 		panel.add(lblPuntajeJugador2);
 		lblPuntajeJugador2.setFont(new Font("Tahoma", Font.BOLD, 13));
@@ -32122,7 +32128,7 @@ public class VentanaPrincipal extends JFrame {
 						JOptionPane.YES_NO_OPTION) == JOptionPane.YES_OPTION) {
 					if (Turno == 1) { // si confirma y de acuerdo al turno se sigue al siguiente turno
 						Turno = 2;
-						labelJugadorEnTurno.setText(Jugador2); // se muestra el turno del siguiente jugador
+						labelJugadorEnTurno.setText(jugador2); // se muestra el turno del siguiente jugador
 						pasarturno++; // se aumenta
 						if (primera == true) { // si es primer turno se asigna el combobox
 							ComboBox = rellenar.EnviarFichas(Turno);
@@ -32156,7 +32162,7 @@ public class VentanaPrincipal extends JFrame {
 
 					} else if (Turno == 2) {
 						Turno = 1;
-						labelJugadorEnTurno.setText(Jugador1);
+						labelJugadorEnTurno.setText(jugador1);
 						pasarturno++;
 						if (primera == true) {
 							ComboBox = rellenar.EnviarFichas(Turno);
@@ -32190,7 +32196,7 @@ public class VentanaPrincipal extends JFrame {
 					}
 					if (pasarturno == 2) { // si se presiona dos veces seguidas el pasar turno el juego termina
 						// se abre la ventana de fin del juego y se cierra esta
-						FinJuego finaljuego = new FinJuego(Jugador1, puntajejugador1, Jugador2, puntajejugador2);
+						FinJuego finaljuego = new FinJuego(jugador1, puntajejugador1, jugador2, puntajejugador2);
 						finaljuego.setVisible(true);
 						dispose();
 					}
@@ -34331,7 +34337,7 @@ public class VentanaPrincipal extends JFrame {
 							// se muestra en la ventana el nuevo puntaje total
 							puntaje2.setText(puntajejugador2 + "");
 							//se cambia al siguiente turno
-							labelJugadorEnTurno.setText(Jugador1);
+							labelJugadorEnTurno.setText(jugador1);
 							pasarturno--; //control de pasar turno
 							Turno = 1;//se asigna el siguiente turno
 						} else if (Turno == 1) {
@@ -34400,7 +34406,7 @@ public class VentanaPrincipal extends JFrame {
 							puntajeparcialjugador1 = puntajeparcialjugador1 * multiplicador;
 							puntajejugador1 = puntajejugador1 + puntajeparcialjugador1;
 							puntaje1.setText(puntajejugador1 + "");
-							labelJugadorEnTurno.setText(Jugador2);
+							labelJugadorEnTurno.setText(jugador2);
 							pasarturno--;
 
 						}
@@ -34411,7 +34417,7 @@ public class VentanaPrincipal extends JFrame {
 						posiciones.clear();
 						//si llega a 0 abre la ventana de fin del juego
 						if (finjuego == 0) {
-							FinJuego finaljuego = new FinJuego(Jugador1, puntajejugador1, Jugador2, puntajejugador2);
+							FinJuego finaljuego = new FinJuego(jugador1, puntajejugador1, jugador2, puntajejugador2);
 							finaljuego.setVisible(true);
 							dispose();
 						}
@@ -34423,5 +34429,15 @@ public class VentanaPrincipal extends JFrame {
 			}
 
 		});
+	}
+	
+	//Getters
+	
+	public String getJ1() {
+		return this.jugador1;
+	}
+	
+	public String getJ2() {
+		return this.jugador2;
 	}
 }

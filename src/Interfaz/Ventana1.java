@@ -26,25 +26,6 @@ public class Ventana1 extends JFrame {
 	private JPanel contentPane;
 
 	/**
-	 * metodo main
-	 * 
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		EventQueue.invokeLater(new Runnable() {
-			public void run() {
-				try {
-					Ventana1 frame = new Ventana1();
-					frame.setVisible(true);
-					frame.setResizable(false);
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
-			}
-		});
-	}
-
-	/**
 	 * Ventana de inicio
 	 */
 	public Ventana1() {
